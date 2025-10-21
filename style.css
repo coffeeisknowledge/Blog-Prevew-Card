@@ -1,0 +1,127 @@
+:root {
+  --font-primary: 'Figtree', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: rgb(244, 208, 78);
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-primary);
+}
+
+.container {
+  background-color: #ffffff;
+  border-style: solid;
+  box-shadow: 0.5rem 0.5rem 0px #000;
+  border-width: 1px;
+  border-radius: 1.25rem;
+  padding: 1.5rem;
+  width: min(90vw, 384px);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+}
+
+.image-container {
+  width: 100%;
+  aspect-ratio: 42/25;
+  overflow: hidden;
+  border: 0;
+  border-radius: 0.625rem;
+}
+
+#article {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+/* #button { */
+/*   background-color: #F4D04E; */
+/*   font-weight: 800; */
+/*   border: 0; */
+/*   font-size: 0.875rem; */
+/*   width: min-content; */
+/*   padding-block: 0.25rem; */
+/*   padding-inline: 0.5rem; */
+/*   border-radius: 0.25rem; */
+/* } */
+
+#button {
+  background-color: #F4D04E;
+  font-weight: 800;
+  font-size: 0.875rem;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.75rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+
+#date {
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0px;
+}
+
+#title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 0px;
+  cursor: pointer;
+}
+
+#title:hover {
+  color: #F4D04E;
+}
+
+#content {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0px;
+  line-height: 1.5;
+  color: rgb(107, 107, 107);
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+#avatar {
+  width: 2rem;
+  aspect-ratio: 1/1;
+}
+
+#name-footer {
+  font-size: 0.875rem;
+  font-weight: 800;
+}
